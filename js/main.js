@@ -25,7 +25,7 @@ sendBtn.addEventListener('click', formSubmit);
 function formSubmit(event) {
     event.preventDefault();
 
-    if (fieldName.value && fieldPassword.value) {
+    if ( fieldName.value.length >= 2 && fieldPassword.value.length > 3 && fieldPassword.value.length <= 12 ) {
         alert('Форма отправлена!');
         fieldName.value = '';
         fieldPassword.value = '';
