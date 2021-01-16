@@ -30,8 +30,28 @@ body {
     margin-bottom: 25px;
 }
 
+.input-password {
+    position: relative;
+}
+
+.input-password__btn {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fas {
+    font-size: 18px;
+    color: #a6a6a6;
+    padding: 10px;
+}
+
 .subscribe-form-text,
 .subscribe-form-password {
+    width: 350px;
     padding: 17px 50px 17px 20px;
     background-color: #f0eef0;
     margin-bottom: 10px;
@@ -41,14 +61,11 @@ body {
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: 95%, 50%;
+    outline-color: #999;
 }
 
 .subscribe-form-text {
     background-image: url(../img/user.png);
-}
-
-.subscribe-form-password {
-    background-image: url(../img/lock.png);
 }
 
 .subscribe-form-text::placeholder,

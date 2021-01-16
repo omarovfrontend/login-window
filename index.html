@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Login window</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Окно входа в систему</title>
 </head>
 <body>
     <div class="login-window">
         <div class="login-block">
-            <form class="subscribe-form" action="#">
-                <input class="subscribe-form-text" type="text" placeholder="Username" required>
-                <input class="subscribe-form-password" type="password" placeholder="Password" required>
+            <form class="subscribe-form js-form" action="#">
+                <input class="subscribe-form-text" type="text" placeholder="Username">
+                <div class="input-password">
+                    <input class="subscribe-form-password" type="password" placeholder="Password">
+                    <button class="input-password__btn js-lock-btn" type="button">
+                        <i class="fas fa-lock"></i>
+                    </button>
+                </div>
                 <button class="subscribe-form-btn">Войти</button>
             </form>
             <div class="login-form-bottom">
@@ -23,5 +29,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
